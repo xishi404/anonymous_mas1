@@ -45,7 +45,7 @@ def run_experiment(config, opt_llm_config, exec_llm_config, latency_weight, use_
     # Log experiment start with config
     logger.info(f"[START] Experiment: {experiment_name}")
     if use_tokens:
-        logger.info(f"  Dataset: {config.dataset}, Latency weight: {token_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
+        logger.info(f"  Dataset: {config.dataset}, Token weight: {token_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
     else:
         logger.info(f"  Dataset: {config.dataset}, Latency weight: {latency_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
 
@@ -335,7 +335,7 @@ def main():
     with open(summary_file, "w") as f:
         json.dump({"timestamp": timestamp, "dataset": args.dataset, "experiments": results,
                   "config": {"sample": args.sample, "round": args.round, "batch_size": args.batch_size,
-                            "lr": args.lr, "latency_weights_tested": latency_weights}}, f, indent=2)
+                            "lr": args.lr, "weights_tested": token_weights if args.use_token_penalty else latency_weights}}, f, indent=2)
 
     logger.info(f"Results saved to: {summary_file}")
 
