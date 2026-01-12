@@ -1,0 +1,141 @@
+max_fill name 'max_fill' is not defined
+can_arrange name 'can_arrange' is not defined
+digits name 'digits' is not defined
+can_arrange name 'can_arrange' is not defined
+sort_numbers name 'sort_numbers' is not defined
+words_string name 'words_string' is not defined
+test_error of words_string
+test_error of words_string
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+largest_divisor name 'largest_divisor' is not defined
+string_sequence name 'string_sequence' is not defined
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+how_many_times name 'how_many_times' is not defined
+test_error of do_algebra
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+can_arrange name 'can_arrange' is not defined
+max_fill name 'max_fill' is not defined
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+count_distinct_characters name 'count_distinct_characters' is not defined
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+do_algebra name 'do_algebra' is not defined
+test_error of do_algebra
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of do_algebra
+max_fill name 'math' is not defined
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of do_algebra
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+max_fill name 'math' is not defined
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of do_algebra
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of is_nested
+test_error of is_nested
+test_error of do_algebra
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+max_fill name 'max_fill' is not defined
+max_fill name 'math' is not defined
+check_dict_case name 'check_dict_case' is not defined
+filter_by_prefix name 'filter_by_prefix' is not defined
+right_angle_triangle name 'right_angle_triangle' is not defined
+remove_vowels name 'remove_vowels' is not defined
+words_string name 'words_string' is not defined
+test_error of words_string
+test_error of words_string
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+get_positive name 'get_positive' is not defined
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+is_multiply_prime name 'is_multiply_prime' is not defined
+count_upper name 'count_upper' is not defined
+even_odd_count name 'even_odd_count' is not defined
+test_error of check_if_last_char_is_a_letter
+test_error of do_algebra
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of check_if_last_char_is_a_letter
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of is_nested
+test_error of do_algebra

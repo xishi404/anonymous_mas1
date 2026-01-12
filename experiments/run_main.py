@@ -10,10 +10,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from maas.configs.models_config import ModelsConfig
-from maas.ext.maas.benchmark.experiment_configs import EXPERIMENT_CONFIGS
-from maas.ext.maas.scripts.optimizer import Optimizer
-from maas.logs import logger, define_log_level
+from lamas.configs.models_config import ModelsConfig
+from lamas.ext.lamas.benchmark.experiment_configs import EXPERIMENT_CONFIGS
+from lamas.ext.lamas.scripts.optimizer import Optimizer
+from lamas.logs import logger, define_log_level
 
 
 def parse_args():
@@ -29,7 +29,7 @@ def parse_args():
     parser.add_argument("--token_weights", type=str, default="0.000001,0.00001,0.0001")
     parser.add_argument("--use_token_penalty", action="store_true")
     parser.add_argument("--virtual_token_rate", type=float, default=50.0)
-    parser.add_argument("--optimized_path", type=str, default="maas/ext/maas/scripts/optimized")
+    parser.add_argument("--optimized_path", type=str, default="lamas/ext/lamas/scripts/optimized")
     parser.add_argument("--lr", type=float, default=0.01)
     parser.add_argument("--test_only", action="store_true")
     parser.add_argument("--no_parallel", action="store_true")
@@ -105,7 +105,7 @@ def run_experiment(config, opt_llm_config, exec_llm_config, latency_weight, use_
                 if train_prompt_tokens is not None and train_completion_tokens is not None:
                     train_total_tokens = train_prompt_tokens + train_completion_tokens
 
-            logger.info(f"[TRAIN] Completed in {train_wall_clock_time:.2f}s, Score: {train_score:.5f if train_score else 'N/A'}")
+            logger.info(f"[TRAIN] Completed in {train_wall_clock_time:.2f}s, Score: {f'{train_score:.5f}' if train_score else 'N/A'}")
 
         except Exception as train_error:
             logger.error(f"[TRAIN] Failed: {train_error}")
@@ -224,7 +224,7 @@ def run_experiment(config, opt_llm_config, exec_llm_config, latency_weight, use_
     test_total_tokens = test_prompt_tokens + test_completion_tokens if (test_prompt_tokens is not None and test_completion_tokens is not None) else None
 
     # Log final metrics
-    logger.info(f"[RESULT] Score: {test_score:.5f if test_score else 'N/A'}, Avg CP Token: {test_avg_cp_token:.2f}" if test_avg_cp_token else f"[RESULT] Score: {test_score:.5f if test_score else 'N/A'}")
+    logger.info(f"[RESULT] Score: {f'{test_score:.5f}' if test_score else 'N/A'}, Avg CP Token: {test_avg_cp_token:.2f}" if test_avg_cp_token else f"[RESULT] Score: {f'{test_score:.5f}' if test_score else 'N/A'}")
     logger.info(f"[END] Experiment: {experiment_name}")
 
     try:

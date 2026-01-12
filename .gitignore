@@ -137,3 +137,12 @@ Thumbs.db
 *.csv
 *.log
 **/log.json
+
+# Logs directory
+logs/
+
+# Latency experiments
+lamas/ext/lamas/scripts/optimized/latency_experiments/
+
+# Data directory
+lamas/ext/lamas/data/

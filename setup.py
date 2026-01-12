@@ -1,4 +1,4 @@
-"""Setup script for MetaGPT."""
+"""Setup script for LAMaS."""
 import subprocess
 from pathlib import Path
 
@@ -97,7 +97,7 @@ extras_require["android_assistant"] = [
 ]
 
 setup(
-    name="metagpt",
+    name="lamas",
     version="0.8.1",
     description="The Multi-Agent Framework",
     long_description=long_description,
@@ -106,7 +106,7 @@ setup(
     author="Anonymous",
     author_email="",
     license="MIT",
-    keywords="metagpt multi-agent multi-role programming gpt llm metaprogramming",
+    keywords="lamas multi-agent multi-role programming gpt llm",
     packages=find_packages(exclude=["contrib", "docs", "examples", "tests*"]),
     python_requires=">=3.9, <3.12",
     install_requires=requirements,
@@ -116,7 +116,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "metagpt=metagpt.software_company:app",
+            "lamas=lamas.software_company:app",
         ],
     },
     include_package_data=True,
