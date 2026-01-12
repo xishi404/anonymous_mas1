@@ -28,12 +28,12 @@ def parse_args():
     parser.add_argument("--include_no_latency", action="store_true")
     parser.add_argument("--token_weights", type=str, default="0.000001,0.00001,0.0001")
     parser.add_argument("--use_token_penalty", action="store_true")
-    parser.add_argument("--virtual_token_rate", type=float, default=50.0)
+    parser.add_argument("--virtual_token_rate", type=float, default=50.0, help="Virtual tokens per second (conversion rate from toolexecution time to tokens)")
     parser.add_argument("--optimized_path", type=str, default="lamas/ext/lamas/scripts/optimized")
     parser.add_argument("--lr", type=float, default=0.01)
     parser.add_argument("--test_only", action="store_true")
-    parser.add_argument("--no_parallel", action="store_true")
-    parser.add_argument("--no_critical_path", action="store_true")
+    parser.add_argument("--no_parallel", action="store_true", help="Disable parallel execution within layers")
+    parser.add_argument("--no_critical_path", action="store_true", help="Disable credit assignment (by default, only nodes on critical path get the latency penalty)")
     parser.add_argument("--normalize_rewards", action="store_true")
     return parser.parse_args()
 
@@ -44,7 +44,10 @@ def run_experiment(config, opt_llm_config, exec_llm_config, latency_weight, use_
 
     # Log experiment start with config
     logger.info(f"[START] Experiment: {experiment_name}")
-    logger.info(f"  Dataset: {config.dataset}, Latency weight: {latency_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
+    if use_tokens:
+        logger.info(f"  Dataset: {config.dataset}, Latency weight: {token_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
+    else:
+        logger.info(f"  Dataset: {config.dataset}, Latency weight: {latency_weight}, Parallel: {not args.no_parallel}, Critical path: {not args.no_critical_path}, Normalize: {args.normalize_rewards}")
 
     test_avg_latency = None
     test_p90_latency = None

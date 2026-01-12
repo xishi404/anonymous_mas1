@@ -140,6 +140,7 @@ Thumbs.db
 
 # Logs directory
 logs/
+tester.txt
 
 # Latency experiments
 lamas/ext/lamas/scripts/optimized/latency_experiments/
@@ -147,4 +148,3 @@ lamas/ext/lamas/scripts/optimized/latency_experiments/
 
 # Data directory
 lamas/ext/lamas/data/
-tester.txt

@@ -26,7 +26,7 @@ Run experiments on HumanEval:
 
 ```bash
 # HumanEval
-python -m experiments.run_main --dataset HumanEval --sample 4 --round 1 --exec_model_name "gpt-4o-mini" --latency_weights "0.005" --lr 0.01 --normalize_rewards
+python -m experiments.run_main --dataset HumanEval --sample 4 --round 1 --exec_model_name "gpt-4o-mini" --token_weights "0.005" --use_token_penalty --lr 0.01 --normalize_rewards
 ```
 
 ### Results
