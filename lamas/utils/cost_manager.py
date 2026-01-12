@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@Desc    : mashenquan, 2023/8/28. Separate the `CostManager` class to support user-level cost accounting.
+@Desc    : Separate the `CostManager` class to support user-level cost accounting.
 """
 
 import re
