@@ -36,3 +36,6 @@ Raw CSV results are saved to:
 ```
 lamas/ext/lamas/scripts/optimized/latency_experiments/latency_weight_0_005/HumanEval/test/round_1/*.csv
 ```
+
+## Acknowledgements
+Special thanks to [MaAS](https://github.com/bingreeky/MaAS) for providing the invaluable code and prompts that served as the foundation for this project.

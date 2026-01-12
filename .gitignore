@@ -143,6 +143,8 @@ logs/
 
 # Latency experiments
 lamas/ext/lamas/scripts/optimized/latency_experiments/
+**/latency_experiments_*/
 
 # Data directory
 lamas/ext/lamas/data/
+tester.txt
