@@ -1,6 +1,4 @@
-"""
-@Acknowledgement https://github.com/evalplus/evalplus/blob/master/evalplus/sanitize.py
-"""
+
 
 import ast
 import traceback

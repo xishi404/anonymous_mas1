@@ -38,4 +38,4 @@ lamas/ext/lamas/scripts/optimized/latency_experiments/latency_weight_0_005/Human
 ```
 
 ## Acknowledgements
-Special thanks to [MaAS](https://github.com/bingreeky/MaAS) for providing the invaluable code and prompts that served as the foundation for this project.
+Special thanks to the MaAS project for providing the invaluable code and prompts that served as the foundation for this project.
