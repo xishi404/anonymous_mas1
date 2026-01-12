@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-@Modified By: mashenquan, 2023/11/27.
-        1. Divide the context into three components: legacy code, unit test code, and console log.
-        2. According to Section 2.2.3.1 of RFC 135, replace file data in the message with the file name.
-"""
+
 import re
 
 from pydantic import Field

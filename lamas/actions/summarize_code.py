@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-@Modified By: mashenquan, 2023/12/5. Archive the summarization content of issue discovery for use in WriteCode.
-"""
+
 from pathlib import Path
 
 from pydantic import Field

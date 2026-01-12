@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-@Desc    : mashenquan, 2023/8/22. + try catch
+@Desc    : 2023/8/22. + try catch
 """
 from __future__ import annotations
 

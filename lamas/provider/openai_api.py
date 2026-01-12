@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-@Modified By: mashenquan, 2023/11/21. Fix bug: ReadTimeout.
-@Modified By: mashenquan, 2023/12/1. Fix bug: Unclosed connection caused by openai 0.x.
-"""
+
 from __future__ import annotations
 
 import json

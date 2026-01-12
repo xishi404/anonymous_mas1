@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-@Modified By: mashenquan, 2023-11-27. Following the think-act principle, solidify the task parameters when creating the
-        WriteTest object, rather than passing them in when calling the run function.
-"""
+
 
 from typing import Optional
 
